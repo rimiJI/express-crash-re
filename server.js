@@ -26,7 +26,7 @@ app.use(logger);
 app.use(express.static(path.join(__dirname, "public")));
 
 //Routes
-app.use("/api/posts", posts);
+app.use("/api/posts", posts); //💥  이게 주소
 
 //Error handler
 app.use(notFound);
