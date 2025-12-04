@@ -6,7 +6,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "npm start",
     "dev": "node --watch --env-file=.env server.js"
   },
   "keywords": [],
