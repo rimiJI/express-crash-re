@@ -58,7 +58,7 @@ export const createPost = (req, res, next) => {
 };
 
 // @desc    Update post
-// @route   PUT /api/posts/:id
+// @route   PUT /api/posts/:id //클릭 후 선택목록 리스트에서 PUT 선택 뒤 주소넣기 (localhost:8000/api/posts/:id)
 export const updatePost = (req, res, next) => {
   const id = parseInt(req.params.id);
   const post = posts.find((p) => p.id === id); //각 게시글 id 유효성 확인
