@@ -1,9 +1,9 @@
-{ 
-   "_comment": "Rander가 이 package.json을 보고 어떤 것을 설치할지 추측해서 실행",
+{
+  "_comment": "Rander가 이 package.json을 보고 어떤 것을 설치할지 추측해서 실행, BUT 내 프로젝트에는 index.js 파일이 없음 → MODULE_NOT_FOUND 발생",
   "name": "express-crash-re",
   "version": "1.0.0",
   "description": "이 프로젝트는 기본 서버 설정, 요청 및 응답 처리, 미들웨어 구현에 대해 다룹니다.",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node server.js",
