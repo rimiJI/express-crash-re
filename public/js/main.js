@@ -5,7 +5,7 @@ const form = document.querySelector("#add-post-form");
 //포스트 목록 가져와서 화면에 뿌리기
 const showPosts = async () => {
   try {
-    const res = await fetch("http://localhost:8000/api/posts"); //💥오타: 800으로 됨
+    const res = await fetch("/api/posts"); //💥await fetch("http://localhost:8000/api/posts"); //💥오타: 800으로 됨
     if (!res.ok) {
       throw new Error("Failed to fetch posts");
     }
